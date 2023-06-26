@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, Http404
 
-# I was missin this line
 from .models import Question
 
 def index(request):
