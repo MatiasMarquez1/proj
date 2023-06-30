@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-9yhn8mdzf-f7lnz)c^vtoaa3(@e8#aao&!dr-12js%ojtml)ge
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['34.125.225.218',
-                'test1.us-west4-b.c.proyecto-usm-youtube.internal',
+ALLOWED_HOSTS = ['34.125.122.80',
                 ]
 
 
