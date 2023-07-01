@@ -6,7 +6,7 @@ from django.contrib import admin
 from .models import Question, Choice
 
 # This makes it so that you can create choices inside the Questions admin page
-class ChoiceInLine(admin.StackedInLine):
+class ChoiceInLine(admin.StackedInline):
     model = Choice
     extra = 3
     
