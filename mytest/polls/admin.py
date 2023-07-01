@@ -8,7 +8,6 @@ from .models import Question, Choice
 # This makes it so that you can create choices inside the Questions admin page
 class ChoiceInLine(admin.StackedInline):
     model = Choice
-    extra = 3
     
 class QuestionAdmin(admin.ModelAdmin):
     # The next line divides the fields into fieldsets with a specified title.
