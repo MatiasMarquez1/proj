@@ -14,7 +14,7 @@ class QuestionAdmin(admin.ModelAdmin):
     # The next line divides the fields into fieldsets with a specified title.
     fieldsets = [
         (None, {"fields":["question_text"]}),
-        ("Date information", {"fields": ["pub_date"]})
+        ("Date information", {"fields": ["pub_date"], "classes": ["collpase"]}),
     ]
     inlines = [ChoiceInLine]
 
