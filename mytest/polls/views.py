@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -7,6 +8,8 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse("Hello world. You're at the polls index.")
 =======
+=======
+>>>>>>> new-things
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.urls import reverse
@@ -51,4 +54,7 @@ def vote(request, question_id):
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
         return HttpResponseRedirect(reverse("polls:results", args=(question.id,)))
+<<<<<<< HEAD
+>>>>>>> new-things
+=======
 >>>>>>> new-things

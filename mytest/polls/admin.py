@@ -1,12 +1,15 @@
 from django.contrib import admin
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 from .models import Question
 
 # Register your models here.
 
 admin.site.register(Question)
 =======
+=======
+>>>>>>> new-things
 # Register your models here.
 
 # This makes it so that you can edit Questions from the admin page.
@@ -26,4 +29,7 @@ class QuestionAdmin(admin.ModelAdmin):
 
 admin.site.register(Question, QuestionAdmin)
 
+<<<<<<< HEAD
+>>>>>>> new-things
+=======
 >>>>>>> new-things

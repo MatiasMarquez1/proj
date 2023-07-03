@@ -20,9 +20,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
 <<<<<<< HEAD
+<<<<<<< HEAD
     path('test1/', include('test1.urls')),
     path('', include('myapp.urls')),
    
+=======
+    path('myapp/', include('myapp.urls')),
+>>>>>>> new-things
 =======
     path('myapp/', include('myapp.urls')),
 >>>>>>> new-things
