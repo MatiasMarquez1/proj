@@ -1,18 +1,4 @@
 from django.contrib import admin
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-from .models import Question
-
-# Register your models here.
-
-admin.site.register(Question)
-=======
-=======
->>>>>>> new-things
-# Register your models here.
-
-# This makes it so that you can edit Questions from the admin page.
 from .models import Question, Choice
 
 # This makes it so that you can create choices inside the Questions admin page
@@ -28,8 +14,3 @@ class QuestionAdmin(admin.ModelAdmin):
     inlines = [ChoiceInLine]
 
 admin.site.register(Question, QuestionAdmin)
-
-<<<<<<< HEAD
->>>>>>> new-things
-=======
->>>>>>> new-things
