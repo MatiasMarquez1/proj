@@ -25,18 +25,8 @@ SECRET_KEY = 'django-insecure-9yhn8mdzf-f7lnz)c^vtoaa3(@e8#aao&!dr-12js%ojtml)ge
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['34.125.122.80']
-=======
 ALLOWED_HOSTS = ['*',
                 ]
->>>>>>> new-things
-=======
-ALLOWED_HOSTS = ['*',
-                ]
->>>>>>> new-things
-
 
 # Application definition
 
@@ -49,13 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myapp',
     'polls.apps.PollsConfig',
-<<<<<<< HEAD
-<<<<<<< HEAD
     'test1',
-=======
->>>>>>> new-things
-=======
->>>>>>> new-things
 ]
 
 MIDDLEWARE = [
