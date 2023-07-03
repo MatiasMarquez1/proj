@@ -16,7 +16,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -26,7 +25,12 @@ SECRET_KEY = 'django-insecure-9yhn8mdzf-f7lnz)c^vtoaa3(@e8#aao&!dr-12js%ojtml)ge
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['34.125.122.80']
+=======
+ALLOWED_HOSTS = ['*',
+                ]
+>>>>>>> new-things
 
 
 # Application definition
@@ -40,14 +44,21 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myapp',
     'polls.apps.PollsConfig',
+<<<<<<< HEAD
     'test1',
+=======
+>>>>>>> new-things
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+  
+    # Manages sessions across requests
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+  
+    # Associates users with requests using sessions
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -58,7 +69,7 @@ ROOT_URLCONF = 'mytest.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],   # This line tells django where the templates are located
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -109,7 +120,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Santiago'
 
 USE_I18N = True
 
